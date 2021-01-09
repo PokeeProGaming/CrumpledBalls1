@@ -28,11 +28,11 @@ function setup() {
 	whiteZone2.shapeColor=("white");
 	whiteZone3=createSprite(1100,590,20,100);
 	whiteZone3.shapeColor=("white");
-	box1=Bodies.rectangle(900,610,20,100);
+	box1=Bodies.rectangle(900,610,20,100,{isStatic:true});
 	World.add(world, this.box1);
-	box2=Bodies.rectangle(1000,610,20,100);
+	box2=Bodies.rectangle(1000,610,20,100,{isStatic:true});
 	World.add(world, this.box2);
-	box3=Bodies.rectangle(1100,610,20,100);
+	box3=Bodies.rectangle(1100,610,20,100,{isStatic:true});
 	World.add(world, this.box3);
 	paper = new Paper(20,200,20);
 	ground = createSprite(800,670,1600,20);
